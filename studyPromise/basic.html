@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玉树临风美少年，揽镜自顾夜不眠 </title>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+		<script type="text/javascript">
+		
+			// promise 的执行顺序，执行器中代码同步执行
+		
+	
+    /* let p = new Promise((reslove,reject) => {
+			// console.log(1);
+			// 成功调用reslove函数
+			// reslove('success');
+			// 失败调用reject函数
+			// reject('error');
+
+			// console.log(2);
+    });
+		// console.log('3');
+		
+		p.then((value) => {
+			// console.log(4);
+			console.log(value);
+		},(reason) => {
+			console.log(reason);
+		});
+    console.log(p); */
+		// 改变promise状态的三种方式
+		let p = new Promise ((reslove, reject) => {
+			// reslove('success');
+			// reject("error");
+			// throw("error");
+			// throw(new Error())
+		});
+		p.then((value) => {
+			console.log(value);
+		}, (reason) => {
+			console.log(reason);
+		});
+		console.log(p);
+
+    </script>
+</body>
+</html>
